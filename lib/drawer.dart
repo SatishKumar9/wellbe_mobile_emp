@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:wellbeEmp/form.dart';
 import 'homepage.dart';
 import 'login.dart';
 import 'functions.dart';
@@ -131,6 +132,15 @@ class _drawer extends State<AppDrawer> {
                   context,
                   new MaterialPageRoute(
                       builder: (context) => UserRequestFund()));
+            },
+          ),
+          FlatButton(
+            child: Text("  Fill Details"),
+            onPressed: () {
+              Navigator.push(
+                  context,
+                  new MaterialPageRoute(
+                      builder: (context) => employeeForm()));
             },
           ),
           FlatButton(
